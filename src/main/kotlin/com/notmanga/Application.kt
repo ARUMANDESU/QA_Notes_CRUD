@@ -1,6 +1,8 @@
 package com.notmanga
 
-import com.notmanga.plugins.*
+import com.notmanga.plugins.configureHTTP
+import com.notmanga.plugins.configureSerialization
+import com.notmanga.plugins.notesRoutes
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -12,5 +14,6 @@ fun main() {
 
 fun Application.module() {
     configureHTTP()
-    configureRouting()
+    notesRoutes()
+    configureSerialization()
 }
