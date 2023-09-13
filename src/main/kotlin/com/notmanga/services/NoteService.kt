@@ -72,24 +72,24 @@ class MockNoteService: INoteService{
 
     override fun findAllNotes(): Set<Note> {
         return setOf(
-            Note{title = "note1"; body = "body1"},
-            Note{title = "note2"; body = "body2"},
-            Note{title = "note3"; body = "body3"},
-            Note{title = "note4"; body = "body4"},
-            Note{title = "note5"; body = "body5"},
-            Note{title = "note6"; body = "body6"},
+            Note{id = 1; title = "note1"; body = "body1"},
+            Note{id = 2; title = "note2"; body = "body2"},
+            Note{id = 3; title = "note3"; body = "body3"},
+            Note{id = 4; title = "note4"; body = "body4"},
+            Note{id = 5; title = "note5"; body = "body5"},
+            Note{id = 6; title = "note6"; body = "body6"},
         )
 
     }
 
     override fun findNoteById(noteId: Int): Note? {
         return when(noteId){
-            1 -> Note{title = "note1"; body = "body1"}
-            2 -> Note{title = "note2"; body = "body2"}
-            3 -> Note{title = "note3"; body = "body3"}
-            4 -> Note{title = "note4"; body = "body4"}
-            5 -> Note{title = "note5"; body = "body5"}
-            6 -> Note{title = "note6"; body = "body6"}
+            1 -> Note{id = 1; title = "note1"; body = "body1"}
+            2 -> Note{id = 2; title = "note2"; body = "body2"}
+            3 -> Note{id = 3; title = "note3"; body = "body3"}
+            4 -> Note{id = 4; title = "note4"; body = "body4"}
+            5 -> Note{id = 5; title = "note5"; body = "body5"}
+            6 -> Note{id = 6; title = "note6"; body = "body6"}
             else -> null
         }
     }
