@@ -1,5 +1,6 @@
 package com.notmanga.plugins
 
+import com.notmanga.services.MockNoteService
 import io.ktor.client.request.*
 import io.ktor.server.testing.*
 import kotlin.test.Test
@@ -7,12 +8,12 @@ import kotlin.test.Test
 class CreateNoteTest {
 
     @Test
-    fun testPost() = testApplication {
+    fun testPostWithValidData() = testApplication {
         application {
-            notesRoutes()
+            notesRoutes(MockNoteService())
         }
         client.post("/").apply {
-            TODO("Please write your test here")
+
         }
     }
 }
