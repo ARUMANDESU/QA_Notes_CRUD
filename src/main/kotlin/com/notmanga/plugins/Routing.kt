@@ -22,10 +22,23 @@ fun Application.notesRoutes(noteService: INoteService = NoteService()) {
             deleteNoteByIdRoute(noteService)
         }
 
+        route("/user"){
+            registerUserRoute()
+            loginUserRoute()
+        }
+
     }
 }
 
- fun Route.deleteNoteByIdRoute(noteService: INoteService) {
+private fun Route.loginUserRoute() {
+    TODO("Not yet implemented")
+}
+
+private fun Route.registerUserRoute() {
+    TODO("Not yet implemented")
+}
+
+fun Route.deleteNoteByIdRoute(noteService: INoteService) {
     delete("/{id}") {
         val id: Int = call.parameters["id"]?.toIntOrNull() ?: return@delete call.respond(HttpStatusCode.BadRequest,ErrorResponse("Invalid id"))
 
