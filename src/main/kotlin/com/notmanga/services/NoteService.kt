@@ -22,7 +22,7 @@ class NoteService: INoteService{
     private val database = Database.connect (
         url= "jdbc:postgresql://localhost:5432/qa_notes",
         driver = "org.postgresql.Driver",
-        user = "postgres",
+        user = "qa_notes",
         password = "admin"
     )
 
