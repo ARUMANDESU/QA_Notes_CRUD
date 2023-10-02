@@ -22,10 +22,10 @@ fun Application.notesRoutes(noteService: INoteService = NoteService()) {
             deleteNoteByIdRoute(noteService)
         }
 
-        route("/user"){
+        /*route("/user"){
             registerUserRoute()
             loginUserRoute()
-        }
+        }*/
 
     }
 }
