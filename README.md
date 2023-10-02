@@ -20,6 +20,7 @@ fun testAddition() {
 }
 
 ```
+![img_1.png](img_1.png)
 
 # Integration test
 Integration tests verify that different components or modules of your system work together correctly.
@@ -46,6 +47,7 @@ fun testCrudOperations() {
 }
 
 ```
+![img_2.png](img_2.png)
 
 # Stress testing
 Stress testing evaluates how well your system handles extreme conditions or workloads.
@@ -55,5 +57,5 @@ You can use [Apache JMeter](https://jmeter.apache.org/) or [Gatling](https://gat
 Smoke testing checks the basic functionality of your application to ensure it runs without critical errors.
 Smoke test runs before more extensive testing.
 ---
-I think that smoke test is not necessary for this crud app, no where to place.
+But I think that smoke test is not necessary for this crud app, no where to place.
 Because smoke testing checks the basic functionality of your application to ensure it runs without critical errors.

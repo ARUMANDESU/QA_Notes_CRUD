@@ -52,5 +52,4 @@ dependencies {
 
     // client
     implementation("io.ktor:ktor-client-content-negotiation-jvm:$ktor_version")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
