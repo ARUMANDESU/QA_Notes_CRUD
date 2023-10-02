@@ -1,5 +1,4 @@
-I think that smoke test is not necessary for this crud app, no where to place.
-Because smoke testing checks the basic functionality of your application to ensure it runs without critical errors.
+
 ![img.png](img.png)
 
 # Unit test
@@ -55,3 +54,6 @@ You can use [Apache JMeter](https://jmeter.apache.org/) or [Gatling](https://gat
 # Smoke testing
 Smoke testing checks the basic functionality of your application to ensure it runs without critical errors.
 Smoke test runs before more extensive testing.
+---
+I think that smoke test is not necessary for this crud app, no where to place.
+Because smoke testing checks the basic functionality of your application to ensure it runs without critical errors.
